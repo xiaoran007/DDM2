@@ -82,7 +82,7 @@
         }
     },
     "train": {
-        "n_iter": 100000,
+        "n_iter": 1000,
         "val_freq": 1e3,
         "save_checkpoint_freq": 1e4,
         "print_freq": 1e2,
@@ -97,7 +97,7 @@
         }
     },
     "noise_model": {
-        "resume_state": null,
+        "resume_state": "/tmp/pycharm_project_659/experiments/hardi150_noisemodel_240926_224741/checkpoint/latest",
         "drop_rate": 0.0,
         "unet": {
             "in_channel": 2,
@@ -131,5 +131,5 @@
             "lr": 1e-4
         }
     },
-    "stage2_file": null
+    "stage2_file": "/tmp/pycharm_project_659/experiments/stage2.txt"
 }

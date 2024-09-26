@@ -192,12 +192,12 @@ class DDM2(BaseModel):
         state_dict = network.state_dict()
         for key, param in state_dict.items():
             state_dict[key] = param.cpu()
-        torch.save(state_dict, gen_path)
+        torch.save(state_dict, gen_path, _use_new_zipfile_serialization=False)
         # opt
         opt_state = {'epoch': epoch, 'iter': iter_step,
                      'scheduler': None, 'optimizer': None}
         opt_state['optimizer'] = self.optG.state_dict()
-        torch.save(opt_state, opt_path)
+        torch.save(opt_state, opt_path, _use_new_zipfile_serialization=False)
 
         logger.info(
             'Saved model in [{:s}] ...'.format(gen_path))
