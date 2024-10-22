@@ -1,3 +1,3 @@
 ##### PLEASE UPDTAE CONFIGURE FILE BEFORE EXCUTING THIS SCRIPT #####
-python3 match_state.py -p train -c config/hardi_150_r.json
+python3 match_state.py -p train -c config/hardi_150_phase2.json
 ##### PLEASE UPDTAE CONFIGURE FILE BEFORE EXCUTING THIS SCRIPT #####
