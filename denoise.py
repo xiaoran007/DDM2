@@ -43,7 +43,9 @@ if __name__ == "__main__":
             
             #### evaluation slice ####
             if args.save:
-                dataset_opt['val_volume_idx'] = 32 # save only the 32th volume
+                # dataset_opt['val_volume_idx'] = 32 # save only the 32th volume
+                # see https://github.com/StanfordMIMI/DDM2/issues/8
+                dataset_opt['val_volume_idx'] = 'all'  # save all volume
                 dataset_opt['val_slice_idx'] = 'all' #save all slices
             ##########################
 
