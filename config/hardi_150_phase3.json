@@ -97,7 +97,7 @@
         }
     },
     "noise_model": {
-        "resume_state": "/root/ddm2/experiments/hardi150_noisemodel_241023_001200/checkpoint/latest",
+        "resume_state": "/root/ddm2/experiments/hardi150_noisemodel_241023_120714/checkpoint/latest",
         "drop_rate": 0.0,
         "unet": {
             "in_channel": 2,
