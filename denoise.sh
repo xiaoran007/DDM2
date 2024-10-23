@@ -1,1 +1,1 @@
-python3 denoise.py -c config/hardi_150.json --save
+python3 denoise.py -c config/hardi_150_phase3.json --save
