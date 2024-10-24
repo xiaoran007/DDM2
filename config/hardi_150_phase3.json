@@ -14,7 +14,7 @@
     "datasets": {
         "train": {
             "name": "hardi",
-            "dataroot": "/root/ddm2/dataset/stanford_hardi/HARDI150.nii.gz",
+            "dataroot": "dataset/stanford_hardi/HARDI150.nii.gz",
             "valid_mask": [10,160],
             "phase": "train",
             "padding": 3,
@@ -27,7 +27,7 @@
         },
         "val": {
             "name": "hardi",
-            "dataroot": "/root/ddm2/dataset/stanford_hardi/HARDI150.nii.gz",
+            "dataroot": "dataset/stanford_hardi/HARDI150.nii.gz",
             "valid_mask": [10,160],
             "phase": "val",
             "padding": 3,
@@ -97,7 +97,7 @@
         }
     },
     "noise_model": {
-        "resume_state": "/root/ddm2/experiments/hardi150_noisemodel_241023_120714/checkpoint/latest",
+        "resume_state": "experiments/hardi150_noisemodel_241023_174901/checkpoint/latest",
         "drop_rate": 0.0,
         "unet": {
             "in_channel": 2,
@@ -131,5 +131,5 @@
             "lr": 1e-4
         }
     },
-    "stage2_file": "/root/ddm2/experiments/stage2.txt"
+    "stage2_file": "experiments/stage2.txt"
 }
